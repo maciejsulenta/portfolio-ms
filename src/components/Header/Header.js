@@ -1,4 +1,6 @@
 import styled, { keyframes } from "styled-components";
+import PersonsMobile from "../../assets/images/PersonsMobile.png";
+import { theme } from "../../assets/styles/theme";
 
 const personWalk = keyframes`
 0%{
@@ -225,29 +227,83 @@ const handleWalkType = (walkType) => {
       return "translateY(-0.5em); z-index: 3;";
     case "right under":
       return "translateY(2.5em); z-index: 4;";
+    default:
+      return "";
   }
 };
 
 export const Container = styled.div`
   width: 100%;
   height: 100vh;
-  font-size: 20px;  
   position: relative;
   overflow: hidden;
+  display: flex;
+  justify-content: center;
 `;
 export const Person = styled.div`
-  width: 10em;
-  height: 10em;
+  width: 100%;
+  height: 30vh;
   position: absolute;
-  background-image: url(${(props) => props.img});
-  background-size: contain;
-  background-position: center;
-  background-repeat: no-repeat;
-  animation-name: ${personWalk};
-  animation-duration: ${(props) => props.speed + "s"};
-  animation-delay: ${(props) => props.delay + "s"};
-  animation-timing-function: linear;
-  animation-iteration-count: infinite;
-  animation-fill-mode: both;
-  transform: ${({ walkType }) => handleWalkType(walkType)};
+  bottom: 0;
+  background-image: url(${PersonsMobile});
+  background-size: cover;
+  background-position: top center;
+  @media screen and (min-width: 450px) {
+    height: 35vh;
+  }
+  @media screen and (min-width: 768px) {
+    width: 10em;
+    height: 10em;
+    position: absolute;
+    bottom: 0;
+    background-image: url(${(props) => props.img});
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    animation-name: ${personWalk};
+    animation-duration: ${(props) => props.speed + "s"};
+    animation-delay: ${(props) => props.delay + "s"};
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-fill-mode: both;
+    transform: ${({ walkType }) => handleWalkType(walkType)};
+  }
+`;
+export const TextWrap = styled.div`
+  width: 16em;
+  height: 26em;
+  position: relative;
+  top: 15vh;
+  font-family: "Gluten", sans-serif;
+  color: ${theme.colors.black};
+  text-align: center;
+  font-size: 3.5em;
+  z-index: 2;
+  @media screen and (min-width: 450px) {
+    font-size: 2em;
+  }
+  @media screen and (min-width: 768px) {
+    width: fit-content;
+    height: fit-content;
+    position: absolute;
+    top: 6em;
+    left: 4em;
+    font-size: 1.35em;
+    text-align: left;
+  }
+`;
+export const Title = styled.h2`
+  font-size: 4em;
+  font-weight: 400;
+  line-height: 0.8em;
+`;
+export const Text = styled.h3`
+  font-size: 1.8em;
+  font-weight: 400;
+  line-height: 1em;
+  margin-top: 1em;
+  @media screen and (min-width: 768px) {
+    font-size: 1.5em;
+    margin-top: 0.3em;
+  }
 `;
