@@ -21,6 +21,7 @@ html {
 }
 
 body {
+  background-color: white;
   font-size: 5px;
   @media screen and (min-width: 450px) {
     font-size: 8px;
