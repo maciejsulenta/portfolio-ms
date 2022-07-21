@@ -288,7 +288,7 @@ export const TextWrap = styled.div`
     position: absolute;
     top: 6em;
     left: 4em;
-    font-size: 1.35em;
+    font-size: 1.2em;
     text-align: left;
   }
 `;

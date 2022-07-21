@@ -1,9 +1,11 @@
 import React from "react";
 import { peopleData } from "../../assets/data/peopleData";
+import Menu from "../Menu";
 import { Container, Person, TextWrap, Title, Text } from "./Header";
 const Header = () => {
   return (
     <Container>
+      <Menu />
       <TextWrap>
         <Title>
           Hello,
