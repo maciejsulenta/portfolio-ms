@@ -8,6 +8,7 @@ export const theme = {
   fontSizes: {
     small: "0.7em",
     normal: "1em",
+    inter: "1.5em",
     big: "2em",
     huge: "3em",
   },

@@ -29,9 +29,13 @@ export const WorkCardContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
+  
   &:hover {
     transform: translate(-50%, -20%);
     background-color: ${theme.colors.brown};
+  }
+  &:active {
+    transform: translate(-50%, -20%) scale(1.1);
   }
 `;
 export const Image = styled.img`

@@ -13,6 +13,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  
   @media screen and (min-width: 450px) {
     font-size: 4em;
   }
@@ -27,6 +28,7 @@ export const Title = styled.div`
   text-align: center;
   line-height: 0.9em;
   margin: ${(props) => (props.footer ? "0" : "4em 0 0.5em 0")};
+
   @media screen and (min-width: 450px) {
     margin: ${(props) => (props.footer ? "0" : "5.5em 0 1em 0")};
   }
@@ -56,6 +58,12 @@ export const WorkCardContainer = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  transition: all 0.1s ease;
+
+  &:active {
+    transform: scale(1.05);
+    background-color: ${theme.colors.brown};
+  }
 `;
 export const CardTitle = styled.span`
   font-size: ${theme.fontSizes.normal};
@@ -93,6 +101,14 @@ export const ScrollButton = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  z-index: 999;
+  cursor: pointer;
+  transition: all 0.1s ease;
+
+  &:active {
+    transform: scale(1.1);
+    border-color: ${theme.colors.brown};
+  }
 `;
 export const Arrow = styled.div`
   width: 0.2em;
