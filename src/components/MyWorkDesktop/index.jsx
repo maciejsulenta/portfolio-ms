@@ -1,16 +1,33 @@
 import React from "react";
-import WorkCard from "../WorkCard";
 import Person1 from "../../assets/images/Person1.png";
 import Person2 from "../../assets/images/Person13.png";
 import Person3 from "../../assets/images/Person9.png";
-import { Container } from "./MyWorkDesktop";
+import {
+  Container,
+  WorkCardContainer,
+  Image,
+  CardTitle,
+  CardText,
+} from "./MyWorkDesktop";
 
 const MyWorkDesktop = () => {
   return (
     <Container>
-      <WorkCard left="25%" top="5em" img={Person1} text="pralki" />
-      <WorkCard left="50%" top="10em" img={Person2} text="B28" />
-      <WorkCard left="75%" top="5em" img={Person3} text="SPS" />
+      <WorkCardContainer left="25%" top="5em">
+        <Image src={Person1} />
+        <CardTitle>pralki</CardTitle>
+        <CardText>click me!</CardText>
+      </WorkCardContainer>
+      <WorkCardContainer left="50%" top="10em">
+        <Image src={Person2} />
+        <CardTitle>B28</CardTitle>
+        <CardText>click me!</CardText>
+      </WorkCardContainer>
+      <WorkCardContainer left="75%" top="5em">
+        <Image src={Person3} />
+        <CardTitle>SPS</CardTitle>
+        <CardText>click me!</CardText>
+      </WorkCardContainer>
     </Container>
   );
 };
