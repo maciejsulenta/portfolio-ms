@@ -1,6 +1,26 @@
 import styled from "styled-components";
+import { keyframes } from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import myWorkBg from "../../assets/images/myWorkBg.png";
+import MeImg from "../../assets/images/Me.png";
+import MeImg1 from "../../assets/images/Me1.png";
+
+export const ArrowAnimationLeft = keyframes`
+from{
+  transform: translate(0);
+}
+to{
+  transform: translate(2em, -2em);
+}
+`;
+export const ArrowAnimationRight = keyframes`
+from{
+  transform: translate(0);
+}
+to{
+  transform: translate(-2em, -2em);
+}
+`;
 
 export const Container = styled.div`
   display: none;
@@ -29,7 +49,7 @@ export const WorkCardContainer = styled.div`
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
-  
+
   &:hover {
     transform: translate(-50%, -20%);
     background-color: ${theme.colors.brown};
@@ -65,4 +85,60 @@ export const CardText = styled.p`
   bottom: 0.3em;
   font-family: "Gluten", sans-serif;
   font-size: ${theme.fontSizes.small};
+`;
+export const MeIcon = styled.div`
+  width: 15em;
+  height: 15em;
+  position: absolute;
+  bottom: -1em;
+  left: 50%;
+  transform: translateX(-50%);
+  background-image: url(${MeImg});
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: all 0.1s linear;
+  &:hover {
+    background-image: url(${MeImg1});
+  }
+`;
+export const ArrowWrap = styled.div`
+  position: absolute;
+  bottom: 5em;
+  left: ${(props) => props.left};
+  right: ${(props) => props.right};
+  animation-name: ${(props) =>
+    props.left ? ArrowAnimationLeft : ArrowAnimationRight};
+  animation-duration: 1.5s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-in-out;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+`;
+export const Arrow = styled.div`
+  width: 1.5em;
+  height: 8em;
+  background-color: ${theme.colors.black};
+  border-radius: 1em;
+  transform: ${(props) => (props.left ? "rotate(35deg)" : "rotate(-35deg)")};
+
+  &:after,
+  &:before {
+    content: "";
+    width: 1.5em;
+    height: 5em;
+    position: absolute;
+    background-color: ${theme.colors.black};
+    border-radius: 1em;
+  }
+  &:after {
+    top: -1em;
+    left: -1.3em;
+    transform: rotate(45deg);
+  }
+  &:before {
+    top: -1em;
+    left: 1.3em;
+    transform: rotate(-45deg);
+  }
 `;

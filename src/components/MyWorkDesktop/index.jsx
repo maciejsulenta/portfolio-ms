@@ -8,6 +8,9 @@ import {
   Image,
   CardTitle,
   CardText,
+  MeIcon,
+  ArrowWrap,
+  Arrow,
 } from "./MyWorkDesktop";
 
 const MyWorkDesktop = () => {
@@ -28,6 +31,13 @@ const MyWorkDesktop = () => {
         <CardTitle>SPS</CardTitle>
         <CardText>click me!</CardText>
       </WorkCardContainer>
+      <MeIcon />
+      <ArrowWrap left="27em">
+        <Arrow left />
+      </ArrowWrap>
+      <ArrowWrap right="27em">
+        <Arrow />
+      </ArrowWrap>
     </Container>
   );
 };
