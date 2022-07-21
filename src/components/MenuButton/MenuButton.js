@@ -20,7 +20,7 @@ const menuBubbleAnimation = keyframes`
 `;
 export const MenuContainer = styled.div`
   display: none;
-
+  
   @media screen and (min-width: 768px) {
     display: block;
     height: fit-content;
@@ -30,18 +30,6 @@ export const MenuContainer = styled.div`
     right: 0;
     font-size: 1em;
   }
-`;
-export const MenuItem = styled.p`
-  position: absolute;
-  top: 35%;
-  left: 60%;
-  font-size: ${theme.fontSizes.normal};
-  font-family: "Gluten", sans-serif;
-  text-align: center;
-  color: ${theme.colors.white};
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  z-index: 2;
 `;
 export const MenuBubble = styled.div`
   width: 10em;
@@ -73,11 +61,32 @@ export const MenuBubble = styled.div`
     animation: ${menuBubbleAnimation} 10s linear infinite alternate;
   }
 `;
+export const MenuItem = styled.p`
+  position: absolute;
+  top: 35%;
+  left: 60%;
+  font-size: ${theme.fontSizes.normal};
+  font-family: "Gluten", sans-serif;
+  text-align: center;
+  color: ${theme.colors.white};
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+  z-index: 10;
+  transition: all 0.3s ease;
+  &:hover {
+    font-size: ${theme.fontSizes.inter};
+    color: ${theme.colors.brown};
+  }
+`;
 export const BurgerWrap = styled.div`
   position: fixed;
   top: 25px;
   right: 25px;
   z-index: 999;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
 `;
 export const BurgerContainer = styled.div`
   width: 44px;
@@ -88,10 +97,6 @@ export const BurgerContainer = styled.div`
   align-items: center;
   overflow: hidden;
   transition: all 0.5s ease-in-out;
-
-  @media screen and (min-width: 768px) {
-    display: none;
-  }
 `;
 export const Burger = styled.div`
   width: 38px;

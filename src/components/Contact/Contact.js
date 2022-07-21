@@ -10,10 +10,10 @@ export const Container = styled.div`
   clip-path: polygon(50% 80%, 100% 40%, 100% 0, 0 0, 0 40%);
   transform: translateY(-1px);
   z-index: 1;
+
   @media screen and (min-width: 450px) {
     font-size: 2.5em;
   }
-
   @media screen and (min-width: 768px) {
     font-size: 1em;
   }

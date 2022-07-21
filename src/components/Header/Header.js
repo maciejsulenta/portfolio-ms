@@ -247,6 +247,7 @@ export const Person = styled.div`
   background-image: url(${PersonsMobile});
   background-size: cover;
   background-position: top center;
+
   @media screen and (min-width: 450px) {
     height: 35vh;
   }
@@ -278,6 +279,7 @@ export const TextWrap = styled.div`
   text-align: center;
   font-size: 3.5em;
   z-index: 2;
+
   @media screen and (min-width: 450px) {
     font-size: 2em;
   }
@@ -301,6 +303,7 @@ export const Text = styled.h3`
   font-weight: 400;
   line-height: 1em;
   margin-top: 1em;
+  
   @media screen and (min-width: 768px) {
     font-size: 1.5em;
     margin-top: 0.3em;

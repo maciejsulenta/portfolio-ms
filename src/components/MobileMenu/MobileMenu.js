@@ -21,15 +21,16 @@ export const Bubble = styled(motion.div)`
 `;
 export const MenuItemWrap = styled(motion.div)`
   position: relative;
-  top: 7em;
+  top: 5em;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 2em;
+  gap: 3em;
 `;
 export const MenuItem = styled(motion.span)`
   position: relative;
   color: ${theme.colors.white};
   font-family: "Gluten", sans-serif;
+  font-size: ${theme.fontSizes.big};
 `;
