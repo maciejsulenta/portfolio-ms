@@ -20,7 +20,7 @@ const menuBubbleAnimation = keyframes`
 `;
 export const MenuContainer = styled.div`
   display: none;
-  
+
   @media screen and (min-width: 768px) {
     display: block;
     height: fit-content;
@@ -74,7 +74,6 @@ export const MenuItem = styled.p`
   z-index: 10;
   transition: all 0.3s ease;
   &:hover {
-    font-size: ${theme.fontSizes.inter};
     color: ${theme.colors.brown};
   }
 `;

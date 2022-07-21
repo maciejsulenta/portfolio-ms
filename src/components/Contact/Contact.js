@@ -29,7 +29,7 @@ export const InfoWrap = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 0.8em;
+  gap: 1em;
 
   @media screen and (min-width: 768px) {
     top: 35%;
@@ -43,4 +43,12 @@ export const Text = styled.p`
   font-family: "Gluten", sans-serif;
   color: ${theme.colors.white};
   text-align: center;
+`;
+export const StyledLink = styled.a`
+  color: ${theme.colors.white};
+  text-decoration: none;
+  transition: all 0.2s ease;
+  &:hover {
+    color: ${theme.colors.brown};
+  }
 `;
