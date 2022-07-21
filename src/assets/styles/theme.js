@@ -2,12 +2,13 @@ export const theme = {
   colors: {
     white: "#fff",
     black: "#000",
+    brown: "brown",
   },
 
   fontSizes: {
     small: "0.7em",
     normal: "1em",
-    big: "1.5em",
-    huge: "4.5em",
+    big: "2em",
+    huge: "3em",
   },
 };

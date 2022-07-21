@@ -4,18 +4,18 @@ import { theme } from "../../assets/styles/theme";
 export const Container = styled.div`
   width: 100%;
   height: 20em;
-  position: relative;
+  position: absolute;
   font-size: 3.5em;
   background-color: ${theme.colors.black};
   clip-path: polygon(50% 80%, 100% 40%, 100% 0, 0 0, 0 40%);
-
+  transform: translateY(-1px);
+  z-index: 1;
   @media screen and (min-width: 450px) {
     font-size: 2.5em;
   }
 
   @media screen and (min-width: 768px) {
     font-size: 1em;
-    clip-path: polygon(50% 100%, 100% 25%, 100% 0, 0 0, 0 25%);
   }
 `;
 export const InfoWrap = styled.div`
@@ -32,7 +32,7 @@ export const InfoWrap = styled.div`
   gap: 0.8em;
 
   @media screen and (min-width: 768px) {
-    top: 45%;
+    top: 35%;
   }
 `;
 export const Image = styled.img`
