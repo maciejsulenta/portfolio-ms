@@ -7,7 +7,7 @@ export const theme = {
   fontSizes: {
     small: "0.7em",
     normal: "1em",
-    big: "2em",
+    big: "1.5em",
     huge: "4.5em",
   },
 };
