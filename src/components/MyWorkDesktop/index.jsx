@@ -1,9 +1,8 @@
 import React from "react";
-import Person1 from "../../assets/images/Person1.png";
-import Person2 from "../../assets/images/Person13.png";
-import Person3 from "../../assets/images/Person9.png";
+import { projectData } from "../../assets/data/projectData";
 import {
   Container,
+  WorkCardsWrap,
   WorkCardContainer,
   Image,
   CardTitle,
@@ -16,21 +15,20 @@ import {
 const MyWorkDesktop = () => {
   return (
     <Container name="work">
-      <WorkCardContainer left="25%" top="5em" to="/project-page">
-        <Image src={Person1} />
-        <CardTitle>pralki</CardTitle>
-        <CardText>click me!</CardText>
-      </WorkCardContainer>
-      <WorkCardContainer left="50%" top="10em" to="/project-page">
-        <Image src={Person2} />
-        <CardTitle>B28</CardTitle>
-        <CardText>click me!</CardText>
-      </WorkCardContainer>
-      <WorkCardContainer left="75%" top="5em" to="/project-page">
-        <Image src={Person3} />
-        <CardTitle>SPS</CardTitle>
-        <CardText>click me!</CardText>
-      </WorkCardContainer>
+      <WorkCardsWrap>
+        {projectData.map((project) => (
+          <WorkCardContainer
+            side={project.side}
+            key={project.id}
+            to={`/project-page`}
+            state={project}
+          >
+            <Image src={project.img} />
+            <CardTitle>{project.cardTitle}</CardTitle>
+            <CardText>click me!</CardText>
+          </WorkCardContainer>
+        ))}
+      </WorkCardsWrap>
       <MeIcon />
       <ArrowWrap left="27em">
         <Arrow left />

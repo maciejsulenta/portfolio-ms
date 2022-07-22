@@ -13,29 +13,28 @@ import {
   ScrollButton,
   Arrow,
 } from "./MyWorkMobile";
+import { projectData } from "../../assets/data/projectData";
 
 const MyWorkMobile = () => {
   return (
     <Container name="work-mobile">
       <Title>
-        my <br /> work
+        my<br />work
       </Title>
       <WorkCardsWrap>
-        <WorkCardContainer>
-          <CardTitle>B28</CardTitle>
-          <CardImage src={Person1} />
-        </WorkCardContainer>
-        <WorkCardContainer>
-          <CardTitle>SPS</CardTitle>
-          <CardImage src={Person2} />
-        </WorkCardContainer>
-        <WorkCardContainer>
-          <CardTitle>pralki</CardTitle>
-          <CardImage src={Person3} />
-        </WorkCardContainer>
+        {projectData.map((project) => (
+          <WorkCardContainer
+            to="/project-page"
+            key={project.id}
+            state={project}
+          >
+            <CardTitle>{project.cardTitle}</CardTitle>
+            <CardImage src={project.img} />
+          </WorkCardContainer>
+        ))}
         <Footer>
           <Title footer>
-            the <br /> end
+            the<br />end
           </Title>
           <ScrollButton smooth={true} duration={500} to="home">
             <Arrow />

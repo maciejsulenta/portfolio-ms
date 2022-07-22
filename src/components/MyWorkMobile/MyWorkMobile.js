@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import myWorkBg from "../../assets/images/myWorkBg.png";
 import { Link } from "react-scroll";
+import { Link as LinkR } from "react-router-dom";
 
 export const Container = styled.div`
   width: 100%;
@@ -48,11 +49,12 @@ export const WorkCardsWrap = styled.div`
     gap: 3em;
   }
 `;
-export const WorkCardContainer = styled.div`
+export const WorkCardContainer = styled(LinkR)`
   width: 70%;
   max-width: 350px;
   aspect-ratio: 1/1;
   position: relative;
+  text-decoration: none;
   background-color: ${theme.colors.black};
   border-radius: 1em;
   overflow: hidden;
