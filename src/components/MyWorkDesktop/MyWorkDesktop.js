@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { keyframes } from "styled-components";
 import { theme } from "../../assets/styles/theme";
+import { Link } from "react-router-dom";
 import myWorkBg from "../../assets/images/myWorkBg.png";
 import MeImg from "../../assets/images/Me.png";
 import MeImg1 from "../../assets/images/Me1.png";
@@ -33,16 +34,18 @@ export const Container = styled.div`
     background-image: url(${myWorkBg});
   }
 `;
-export const WorkCardContainer = styled.div`
+export const WorkCardContainer = styled(Link)`
   width: 15em;
   height: 25em;
   position: absolute;
   top: ${(props) => props.top};
   left: ${(props) => props.left};
+  transform: translate(-50%, -50%);
   border: 0.8em solid ${theme.colors.black};
   border-radius: 2em;
-  transform: translate(-50%, -50%);
-  background-color: white;
+  background-color: ${theme.colors.white};
+  color: ${theme.colors.black};
+  text-decoration: none;
   cursor: pointer;
   display: flex;
   flex-direction: column;

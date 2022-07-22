@@ -16,17 +16,17 @@ import {
 const MyWorkDesktop = () => {
   return (
     <Container name="work">
-      <WorkCardContainer left="25%" top="5em">
+      <WorkCardContainer left="25%" top="5em" to="/project-page">
         <Image src={Person1} />
         <CardTitle>pralki</CardTitle>
         <CardText>click me!</CardText>
       </WorkCardContainer>
-      <WorkCardContainer left="50%" top="10em">
+      <WorkCardContainer left="50%" top="10em" to="/project-page">
         <Image src={Person2} />
         <CardTitle>B28</CardTitle>
         <CardText>click me!</CardText>
       </WorkCardContainer>
-      <WorkCardContainer left="75%" top="5em">
+      <WorkCardContainer left="75%" top="5em" to="/project-page">
         <Image src={Person3} />
         <CardTitle>SPS</CardTitle>
         <CardText>click me!</CardText>
