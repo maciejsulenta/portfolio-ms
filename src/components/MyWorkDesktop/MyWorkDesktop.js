@@ -34,13 +34,18 @@ export const Container = styled.div`
     background-image: url(${myWorkBg});
   }
 `;
+export const WorkCardsWrap = styled.div`
+  width: 100%;
+  height: fit-content;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  transform: translateY(-3em);
+`;
 export const WorkCardContainer = styled(Link)`
   width: 15em;
   height: 25em;
-  position: absolute;
-  top: ${(props) => props.top};
-  left: ${(props) => props.left};
-  transform: translate(-50%, -50%);
+  position: relative;
   border: 0.8em solid ${theme.colors.black};
   border-radius: 2em;
   background-color: ${theme.colors.white};
@@ -52,13 +57,14 @@ export const WorkCardContainer = styled(Link)`
   justify-content: space-between;
   align-items: center;
   transition: all 0.3s ease;
-
+  transform: ${(props) => (props.side ? "translateY(-5em)" : "translateY(0)")};
   &:hover {
-    transform: translate(-50%, -20%);
+    transform: ${(props) =>
+      props.side ? "translateY(2em)" : "translateY(7em)"};
     background-color: ${theme.colors.brown};
   }
   &:active {
-    transform: translate(-50%, -20%) scale(1.1);
+    transform: scale(1.1);
   }
 `;
 export const Image = styled.img`
@@ -84,8 +90,8 @@ export const CardTitle = styled.span`
 `;
 export const CardText = styled.p`
   position: absolute;
+  bottom: 0.2em;
   right: 1.5em;
-  bottom: 0.3em;
   font-family: "Gluten", sans-serif;
   font-size: ${theme.fontSizes.small};
 `;

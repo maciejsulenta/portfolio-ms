@@ -24,6 +24,13 @@ export const Container = styled.div`
   position: fixed;
   top: 0;
   left: 0;
+  font-size: ${theme.fontSizes.big};
+  @media screen and (min-width: 450px) {
+    font-size: ${theme.fontSizes.inter};
+  }
+  @media screen and (min-width: 768px) {
+    font-size: ${theme.fontSizes.normal};
+  }
 `;
 export const ButtonBubble = styled.div`
   width: 10em;
@@ -56,7 +63,7 @@ export const ButtonBubble = styled.div`
   }
 `;
 export const ButtonArrow = styled.div`
-  font-size: ${theme.fontSizes.big};
+  font-size: ${theme.fontSizes.inter};
   width: 0.2em;
   height: 1.5em;
   position: relative;

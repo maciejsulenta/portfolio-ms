@@ -1,12 +1,13 @@
 import React from "react";
-import { Link } from "react-router-dom";
 import styled from "styled-components";
 import { theme } from "../assets/styles/theme";
+import { useLocation } from "react-router-dom";
 import ReturnButton from "../components/ReturnButton";
-
+import ProjectPageContent from "../components/ProjectPageContent";
 const Container = styled.div`
   width: 100%;
-  height: 100vh;
+  min-height: 100vh;
+  padding: 10em 0;
   background-color: ${theme.colors.black};
   display: flex;
   justify-content: space-around;
@@ -14,9 +15,12 @@ const Container = styled.div`
 `;
 
 const Project = () => {
+  const location = useLocation();
+  const state = location.state;
   return (
     <Container>
       <ReturnButton />
+      <ProjectPageContent project={state} />
     </Container>
   );
 };
