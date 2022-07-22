@@ -40,8 +40,8 @@ export const peopleData = [
     id: 2,
     img: Person2,
     speed: randomNum(7, 18),
-    delay: randomNum(2, 9),
-    walkType: "left mid",
+    delay: 7,
+    walkType: "left top",
   },
   {
     id: 3,

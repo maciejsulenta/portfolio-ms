@@ -212,21 +212,21 @@ const personWalk = keyframes`
 const handleWalkType = (walkType) => {
   switch (walkType) {
     case "left top":
-      return "scaleX(-1) translateY(-4em); animation-direction: reverse; z-index: 1;";
+      return "scaleX(-1) translateY(-2em); animation-direction: reverse; z-index: 1;";
     case "left mid":
-      return "scaleX(-1) translateY(-1em); animation-direction: reverse; z-index: 2;";
+      return "scaleX(-1) translateY(1em); animation-direction: reverse; z-index: 2;";
     case "left bottom":
-      return "scaleX(-1) translateY(0); animation-direction: reverse; z-index: 3;";
+      return "scaleX(-1) translateY(2em); animation-direction: reverse; z-index: 3;";
     case "left under":
-      return "scaleX(-1) translateY(2em); animation-direction: reverse; z-index: 4;";
+      return "scaleX(-1) translateY(3em); animation-direction: reverse; z-index: 4;";
     case "right top":
-      return "translateY(-3em); z-index: 1;";
+      return "translateY(-1.5em); z-index: 1;";
     case "right mid":
-      return "translateY(-1.5em); z-index: 2;";
+      return "translateY(0.5em); z-index: 2;";
     case "right bottom":
-      return "translateY(-0.5em); z-index: 3;";
+      return "translateY(2.5em); z-index: 3;";
     case "right under":
-      return "translateY(2.5em); z-index: 4;";
+      return "translateY(3.5em); z-index: 4;";
     default:
       return "";
   }
@@ -252,8 +252,8 @@ export const Person = styled.div`
     height: 35vh;
   }
   @media screen and (min-width: 768px) {
-    width: 10em;
-    height: 10em;
+    width: 12em;
+    height: 12em;
     position: absolute;
     bottom: 0;
     background-image: url(${(props) => props.img});
@@ -303,7 +303,7 @@ export const Text = styled.h3`
   font-weight: 400;
   line-height: 1em;
   margin-top: 1em;
-  
+
   @media screen and (min-width: 768px) {
     font-size: 1.5em;
     margin-top: 0.3em;
