@@ -5,6 +5,7 @@ import { ThemeProvider } from "styled-components";
 import Landing from "./pages/Landing";
 
 const App = () => {
+
   return (
     <ThemeProvider theme={theme}>
       <GlobalStyles />
