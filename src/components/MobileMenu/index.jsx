@@ -1,5 +1,11 @@
 import React from "react";
-import { Container, Bubble, MenuItemWrap, MenuItem } from "./MobileMenu";
+import {
+  Container,
+  Bubble,
+  MenuItemsWrap,
+  MenuItemContainer,
+  MenuItem,
+} from "./MobileMenu";
 
 const MobileMenu = ({ setIsOpenHandler }) => {
   const menu = {
@@ -58,14 +64,29 @@ const MobileMenu = ({ setIsOpenHandler }) => {
         right="-5em"
         variants={bubble}
       />
-      <MenuItemWrap>
-        <MenuItem variants={bubble} onClick={setIsOpenHandler}>
-          home
-        </MenuItem>
-        <MenuItem variants={bubble} onClick={setIsOpenHandler}>
-          my work
-        </MenuItem>
-      </MenuItemWrap>
+      <MenuItemsWrap>
+        <MenuItemContainer variants={bubble}>
+          <MenuItem
+            variants={bubble}
+            onClick={setIsOpenHandler}
+            smooth={true}
+            duration={500}
+            to="home"
+          >
+            home
+          </MenuItem>
+        </MenuItemContainer>
+        <MenuItemContainer variants={bubble}>
+          <MenuItem
+            onClick={setIsOpenHandler}
+            smooth={true}
+            duration={500}
+            to="work-mobile"
+          >
+            my work
+          </MenuItem>
+        </MenuItemContainer>
+      </MenuItemsWrap>
     </Container>
   );
 };

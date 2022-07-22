@@ -15,7 +15,7 @@ import {
 
 const MyWorkDesktop = () => {
   return (
-    <Container>
+    <Container name="work">
       <WorkCardContainer left="25%" top="5em">
         <Image src={Person1} />
         <CardTitle>pralki</CardTitle>

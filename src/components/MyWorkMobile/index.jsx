@@ -16,7 +16,7 @@ import {
 
 const MyWorkMobile = () => {
   return (
-    <Container>
+    <Container name="work-mobile">
       <Title>
         my <br /> work
       </Title>
@@ -37,7 +37,7 @@ const MyWorkMobile = () => {
           <Title footer>
             the <br /> end
           </Title>
-          <ScrollButton>
+          <ScrollButton smooth={true} duration={500} to="home">
             <Arrow />
           </ScrollButton>
         </Footer>

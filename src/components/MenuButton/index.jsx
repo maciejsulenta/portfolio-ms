@@ -23,7 +23,7 @@ const MenuButton = () => {
   return (
     <>
       <MenuContainer>
-        <MenuItem>
+        <MenuItem smooth={true} duration={500} to="work">
           my <br /> work
         </MenuItem>
         <MenuBubble />

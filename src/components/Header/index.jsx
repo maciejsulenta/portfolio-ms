@@ -4,7 +4,7 @@ import MenuButton from "../MenuButton";
 import { Container, Person, TextWrap, Title, Text } from "./Header";
 const Header = () => {
   return (
-    <Container>
+    <Container name="home">
       <MenuButton />
       <TextWrap>
         <Title>

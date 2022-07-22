@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import myWorkBg from "../../assets/images/myWorkBg.png";
+import { Link } from "react-scroll";
 
 export const Container = styled.div`
   width: 100%;
@@ -13,7 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
+
   @media screen and (min-width: 450px) {
     font-size: 4em;
   }
@@ -93,7 +94,7 @@ export const Footer = styled.div`
   align-items: center;
   gap: 0.8em;
 `;
-export const ScrollButton = styled.div`
+export const ScrollButton = styled(Link)`
   width: 3em;
   height: 3em;
   border: 0.2em solid ${theme.colors.black};

@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { motion } from "framer-motion";
 import { theme } from "../../assets/styles/theme";
+import { Link } from "react-scroll";
 
 export const Container = styled(motion.div)`
   width: 100%;
@@ -19,7 +20,7 @@ export const Bubble = styled(motion.div)`
   border-radius: 50%;
   background-color: ${theme.colors.black};
 `;
-export const MenuItemWrap = styled(motion.div)`
+export const MenuItemsWrap = styled(motion.div)`
   position: relative;
   top: 5em;
   display: flex;
@@ -28,8 +29,10 @@ export const MenuItemWrap = styled(motion.div)`
   align-items: center;
   gap: 3em;
 `;
-export const MenuItem = styled(motion.span)`
+export const MenuItemContainer = styled(motion.div)`
   position: relative;
+`;
+export const MenuItem = styled(Link)`
   color: ${theme.colors.white};
   font-family: "Gluten", sans-serif;
   font-size: ${theme.fontSizes.big};

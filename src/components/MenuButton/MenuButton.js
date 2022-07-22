@@ -1,6 +1,7 @@
 import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import { keyframes } from "styled-components";
+import { Link } from "react-scroll";
 
 const menuBubbleAnimation = keyframes`
   0% {
@@ -61,7 +62,7 @@ export const MenuBubble = styled.div`
     animation: ${menuBubbleAnimation} 10s linear infinite alternate;
   }
 `;
-export const MenuItem = styled.p`
+export const MenuItem = styled(Link)`
   position: absolute;
   top: 35%;
   left: 60%;
