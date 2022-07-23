@@ -14,7 +14,7 @@ const MenuButton = () => {
   return (
     <>
       <MenuContainer>
-        <MenuItem smooth={true} duration={500} to="work">
+        <MenuItem className="link" smooth={true} duration={500} to="work">
           my <br /> work
         </MenuItem>
         <MenuBubble />

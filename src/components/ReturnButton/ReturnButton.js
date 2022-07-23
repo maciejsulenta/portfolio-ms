@@ -104,7 +104,7 @@ export const ButtonWrap = styled(Link)`
   display: flex;
   justify-content: center;
   align-items: center;
-
+  cursor: none;
   &:hover
     ${ButtonArrow},
     &:hover

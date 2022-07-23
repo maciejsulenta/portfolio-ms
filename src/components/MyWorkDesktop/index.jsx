@@ -22,6 +22,7 @@ const MyWorkDesktop = () => {
             key={project.id}
             to={`/project-page`}
             state={project}
+            className="link"
           >
             <Image src={project.img} />
             <CardTitle>{project.cardTitle}</CardTitle>

@@ -10,7 +10,7 @@ const ReturnButton = () => {
   return (
     <Container>
       <ButtonBubble />
-      <ButtonWrap to="/">
+      <ButtonWrap className="link" to="/">
         <ButtonArrow />
       </ButtonWrap>
     </Container>

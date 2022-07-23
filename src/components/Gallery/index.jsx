@@ -21,12 +21,11 @@ const Gallery = ({ project }) => {
   return (
     <StyledSwiper
       id="main"
-      className="swiper"
+      className="swiper link"
       tag="section"
       wrapperTag="ul"
       modules={[Pagination, Autoplay, EffectCube]}
       effect={"cube"}
-      grabCursor={true}
       cubeEffect={{
         shadow: false,
         slideShadows: false,

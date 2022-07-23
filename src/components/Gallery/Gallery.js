@@ -10,7 +10,7 @@ export const StyledSwiper = styled(Swiper)`
   font-size: 6em;
   margin: 0;
   padding: 0;
-
+  cursor: none;
   @media screen and (min-width: 768px) {
     height: 65vh;
     flex: 1;
