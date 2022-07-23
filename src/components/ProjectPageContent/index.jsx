@@ -6,19 +6,13 @@ const ProjectPageContent = ({ project }) => {
     <>
       <Container key={project.id}>
         <Title>{project.title}</Title>
-        <Text subtitle>
-          about
-          <br />
-          project:
-        </Text>
-        <Text>{project.about}</Text>
-        <Text subtitle>
-          tech
-          <br />
-          stack:
-        </Text>
+        <Text subtitle>about project:</Text>
+        <Text dangerouslySetInnerHTML={{ __html: `${project.about}` }} />
+        <Text subtitle>tech stack:</Text>
         <Text tech dangerouslySetInnerHTML={{ __html: `${project.tech}` }} />
-        <Text subtitle>mockups:</Text>
+        <Text subtitle mock>
+          mockups:
+        </Text>
       </Container>
     </>
   );

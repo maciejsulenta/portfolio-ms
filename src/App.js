@@ -2,7 +2,7 @@ import React from "react";
 import { GlobalStyles } from "./assets/styles/globalStyles";
 import { theme } from "./assets/styles/theme";
 import { ThemeProvider } from "styled-components";
-import { Routes, Route, Link } from "react-router-dom";
+import { Routes, Route } from "react-router-dom";
 import Landing from "./pages/Landing";
 import Project from "./pages/Project";
 
