@@ -5,6 +5,7 @@ import { useLocation } from "react-router-dom";
 import ReturnButton from "../components/ReturnButton";
 import ProjectPageContent from "../components/ProjectPageContent";
 import Gallery from "../components/Gallery";
+import Cursor from "../components/Cursor";
 
 const Container = styled.div`
   width: 100%;
@@ -27,11 +28,14 @@ const Project = () => {
   const location = useLocation();
   const state = location.state;
   return (
-    <Container>
-      <ReturnButton />
-      <ProjectPageContent project={state} />
-      <Gallery project={state} />
-    </Container>
+    <>
+      <Cursor />
+      <Container>
+        <ReturnButton />
+        <ProjectPageContent project={state} />
+        <Gallery project={state} />
+      </Container>
+    </>
   );
 };
 

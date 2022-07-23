@@ -48,6 +48,7 @@ export const StyledLink = styled.a`
   color: ${theme.colors.white};
   text-decoration: none;
   transition: all 0.2s ease;
+  cursor: none;
   &:hover {
     color: ${theme.colors.brown};
   }

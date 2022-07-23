@@ -51,7 +51,7 @@ export const WorkCardContainer = styled(Link)`
   background-color: ${theme.colors.white};
   color: ${theme.colors.black};
   text-decoration: none;
-  cursor: pointer;
+  cursor: none;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

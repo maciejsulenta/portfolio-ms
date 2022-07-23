@@ -71,7 +71,7 @@ export const MenuItem = styled(Link)`
   text-align: center;
   color: ${theme.colors.white};
   transform: translate(-50%, -50%);
-  cursor: pointer;
+  cursor: none;
   z-index: 10;
   transition: all 0.3s ease;
   &:hover {

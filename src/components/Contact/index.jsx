@@ -8,12 +8,12 @@ const Contact = () => {
       <InfoWrap>
         <Image src={IconContact} alt="contact-icon" />
         <Text>
-          <StyledLink href="mailto: maciej.sulenta@gmail.com">
+          <StyledLink className="link" href="mailto: maciej.sulenta@gmail.com">
             maciej.sulenta@gmail.com
           </StyledLink>
         </Text>
         <Text>
-          <StyledLink href="https://github.com/maciejsulenta" target="_blank">
+          <StyledLink className="link" href="https://github.com/maciejsulenta" target="_blank">
             github.com/maciejsulenta
           </StyledLink>
         </Text>
