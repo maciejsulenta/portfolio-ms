@@ -34,10 +34,10 @@ export const Container = styled.div`
 `;
 export const ButtonBubble = styled.div`
   width: 10em;
-  height: 9em;
+  height: 10em;
   position: relative;
-  top: -3em;
-  left: -3em;
+  top: -4em;
+  left: -4em;
   background-color: ${theme.colors.white};
   border-radius: 50%;
   animation: ${menuBubbleAnimation} 12s linear infinite alternate;
@@ -52,13 +52,13 @@ export const ButtonBubble = styled.div`
     border-radius: 50%;
   }
   &:after {
-    top: -1em;
-    left: 6em;
+    top: 0;
+    left: 7em;
     animation: ${menuBubbleAnimation} 8s linear infinite alternate;
   }
   &:before {
-    top: 5em;
-    left: 2em;
+    top: 5.5em;
+    left: 4.5em;
     animation: ${menuBubbleAnimation} 10s linear infinite alternate;
   }
 `;

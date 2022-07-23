@@ -1,18 +1,12 @@
 import Person1 from "../../assets/images/Person1.png";
 import Person2 from "../../assets/images/Person13.png";
 import Person3 from "../../assets/images/Person9.png";
-
-import slideFirst from "../../assets/images/synek.png";
-import slideSecond from "../../assets/images/semenowe.png";
-import slideThird from "../../assets/images/dzidzius.png";
-
 import b281 from "../../assets/images/b28-1.avif";
 import b282 from "../../assets/images/b28-2.avif";
 import b283 from "../../assets/images/b28-3.avif";
 import b284 from "../../assets/images/b28-4.avif";
 import b285 from "../../assets/images/b28-5.avif";
 import b286 from "../../assets/images/b28-6.avif";
-
 import naprawa1 from "../../assets/images/naprawa-1.avif";
 import naprawa2 from "../../assets/images/naprawa-2.avif";
 import naprawa3 from "../../assets/images/naprawa-3.avif";
@@ -49,7 +43,7 @@ export const projectData = [
     about:
       "Dental Clinic Management System <br/>Main functionality of the designed application is the dental visit booking system<br/>It has a login and registration system<br/>System distinguish users with three types of permissions (patient, doctor, administrator)",
     tech: "CSS<br/>JavaScript<br/>React.js<br/>Node.js<br/>MongoDB<br/>Express<br/>Framer Motion<br/>styled-components<br/>Figma",
-    mockups: [slideFirst, slideSecond, slideThird],
+    mockups: [b281, b282, b283, b284, b285, b286],
     side: "true",
   },
 ];
