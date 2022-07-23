@@ -36,6 +36,11 @@ const Gallery = ({ project }) => {
       pagination
       spaceBetween={0}
       slidesPerView={1}
+      preloadImages={true}
+      loop={true}
+      init={true}
+      centeredSlides={true}
+      initialSlide="1"
     >
       {slides}
     </StyledSwiper>
