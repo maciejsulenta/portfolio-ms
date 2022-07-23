@@ -1,11 +1,13 @@
 import React from "react";
 import { peopleData } from "../../assets/data/peopleData";
+import BurgerIcon from "../BurgerIcon";
 import MenuButton from "../MenuButton";
 import { Container, Person, TextWrap, Title, Text } from "./Header";
 const Header = () => {
   return (
     <Container name="home">
       <MenuButton />
+      <BurgerIcon/>
       <TextWrap>
         <Title>
           Hello,

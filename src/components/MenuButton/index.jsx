@@ -11,15 +11,6 @@ import {
 } from "./MenuButton";
 
 const MenuButton = () => {
-  const [isOpen, setisOpen] = useState(false);
-  const setIsOpenHandler = () => {
-    setisOpen(!isOpen);
-
-    isOpen
-      ? document.body.classList.remove("no-scroll")
-      : document.body.classList.add("no-scroll");
-  };
-
   return (
     <>
       <MenuContainer>
@@ -28,14 +19,6 @@ const MenuButton = () => {
         </MenuItem>
         <MenuBubble />
       </MenuContainer>
-      <BurgerWrap>
-        <BurgerContainer onClick={setIsOpenHandler}>
-          <Burger isOpen={isOpen} />
-        </BurgerContainer>
-      </BurgerWrap>
-      <AnimatePresence>
-        {isOpen && <MobileMenu setIsOpenHandler={setIsOpenHandler} />}
-      </AnimatePresence>
     </>
   );
 };
