@@ -14,6 +14,13 @@ import naprawa4 from "../../assets/images/naprawa-4.avif";
 import naprawa5 from "../../assets/images/naprawa-5.avif";
 import naprawa6 from "../../assets/images/naprawa-6.avif";
 
+import sps1 from "../../assets/images/sps-1.png";
+import sps2 from "../../assets/images/sps-2.png";
+import sps3 from "../../assets/images/sps-3.png";
+import sps4 from "../../assets/images/sps-4.png";
+import sps5 from "../../assets/images/sps-5.png";
+import sps6 from "../../assets/images/sps-6.png";
+
 export const projectData = [
   {
     id: 1,
@@ -43,7 +50,7 @@ export const projectData = [
     about:
       "Dental Clinic Management System <br/>Main functionality of the designed application is the dental visit booking system<br/>It has a login and registration system<br/>System distinguish users with three types of permissions (patient, doctor, administrator)",
     tech: "CSS<br/>JavaScript<br/>React.js<br/>Node.js<br/>MongoDB<br/>Express<br/>Framer Motion<br/>styled-components<br/>Figma",
-    mockups: [b281, b282, b283, b284, b285, b286],
+    mockups: [sps1, sps2, sps3, sps4, sps5, sps6],
     side: "true",
   },
 ];
