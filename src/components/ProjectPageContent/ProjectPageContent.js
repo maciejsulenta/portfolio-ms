@@ -26,7 +26,7 @@ export const Container = styled.div`
 export const Title = styled.h2`
   width: 4em;
   font-size: ${theme.fontSizes.big};
-  font-family: "Fredericka the Great", sans-serif;
+  font-family: "Gluten", sans-serif;
   font-weight: 400;
   line-height: 1em;
 
@@ -43,7 +43,7 @@ export const Text = styled.p`
   font-family: "Gluten", sans-serif;
   font-weight: ${(props) => (props.subtitle ? "700" : "100")};
   line-height: ${(props) => (props.tech ? "1.2em" : "1.1em")};
-  margin-bottom: ${props => props.mock && "1em"};
+  margin-bottom: ${(props) => props.mock && "1em"};
   @media screen and (min-width: 768px) {
     width: 70%;
     padding-left: 5%;
