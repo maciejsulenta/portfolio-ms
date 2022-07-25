@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import styled from "styled-components";
 import { theme } from "../assets/styles/theme";
 import { useLocation } from "react-router-dom";
@@ -34,6 +34,7 @@ const Project = () => {
   const location = useLocation();
   const state = location.state;
 
+ 
   return (
     <Container variants={container} initial="hidden" animate="show" exit="exit">
       <RouteBubble

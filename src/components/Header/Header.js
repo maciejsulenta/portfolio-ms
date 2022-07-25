@@ -213,21 +213,21 @@ const personWalk = keyframes`
 const handleWalkType = (walkType) => {
   switch (walkType) {
     case "left top":
-      return "scaleX(-1) translateY(-2em); animation-direction: reverse; z-index: 1;";
+      return "scaleX(-1) translateY(-2em); animation-direction: reverse; z-index: 2;";
     case "left mid":
-      return "scaleX(-1) translateY(1em); animation-direction: reverse; z-index: 2;";
+      return "scaleX(-1) translateY(1em); animation-direction: reverse; z-index: 3;";
     case "left bottom":
-      return "scaleX(-1) translateY(2em); animation-direction: reverse; z-index: 3;";
+      return "scaleX(-1) translateY(2em); animation-direction: reverse; z-index: 4;";
     case "left under":
-      return "scaleX(-1) translateY(3em); animation-direction: reverse; z-index: 4;";
+      return "scaleX(-1) translateY(3em); animation-direction: reverse; z-index: 5;";
     case "right top":
-      return "translateY(-1.5em); z-index: 1;";
+      return "translateY(-1.5em); z-index: 2;";
     case "right mid":
-      return "translateY(0.5em); z-index: 2;";
+      return "translateY(0.5em); z-index: 3;";
     case "right bottom":
-      return "translateY(2.5em); z-index: 3;";
+      return "translateY(2.5em); z-index: 4;";
     case "right under":
-      return "translateY(3.5em); z-index: 4;";
+      return "translateY(3.5em); z-index: 5;";
     default:
       return "";
   }
@@ -280,7 +280,7 @@ export const TextWrap = styled(motion.div)`
   text-align: center;
   font-size: 3.5em;
   z-index: 2;
-
+  /* background-color: cadetblue; */
   @media screen and (min-width: 450px) {
     font-size: 2em;
   }
@@ -309,4 +309,20 @@ export const Text = styled(motion.h3)`
     font-size: 1.5em;
     margin-top: 0.3em;
   }
+`;
+export const CircleWrap = styled(motion.div)`
+  display: none;
+  @media screen and (min-width: 768px) {
+    width: 100%;
+    font-size: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+`;
+export const Circle = styled.div`
+  width: 2em;
+  height: 2em;
+  border-radius: 50%;
+  background-color: ${theme.colors.brown};
 `;
