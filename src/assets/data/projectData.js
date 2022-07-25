@@ -1,19 +1,17 @@
 import Person1 from "../../assets/images/Person1.png";
 import Person2 from "../../assets/images/Person13.png";
 import Person3 from "../../assets/images/Person9.png";
-import b281 from "../../assets/images/b28-1.avif";
-import b282 from "../../assets/images/b28-2.avif";
-import b283 from "../../assets/images/b28-3.avif";
-import b284 from "../../assets/images/b28-4.avif";
-import b285 from "../../assets/images/b28-5.avif";
-import b286 from "../../assets/images/b28-6.avif";
-import naprawa1 from "../../assets/images/naprawa-1.avif";
-import naprawa2 from "../../assets/images/naprawa-2.avif";
-import naprawa3 from "../../assets/images/naprawa-3.avif";
-import naprawa4 from "../../assets/images/naprawa-4.avif";
-import naprawa5 from "../../assets/images/naprawa-5.avif";
-import naprawa6 from "../../assets/images/naprawa-6.avif";
-
+import b281 from "../../assets/images/b28-1.png";
+import b282 from "../../assets/images/b28-2.png";
+import b283 from "../../assets/images/b28-3.png";
+import b284 from "../../assets/images/b28-4.png";
+import b285 from "../../assets/images/b28-5.png";
+import b286 from "../../assets/images/b28-6.png";
+import naprawa1 from "../../assets/images/naprawa-1.png";
+import naprawa2 from "../../assets/images/naprawa-2.png";
+import naprawa3 from "../../assets/images/naprawa-3.png";
+import naprawa4 from "../../assets/images/naprawa-4.png";
+import naprawa5 from "../../assets/images/naprawa-5.png";
 import sps1 from "../../assets/images/sps-1.png";
 import sps2 from "../../assets/images/sps-2.png";
 import sps3 from "../../assets/images/sps-3.png";
@@ -29,7 +27,7 @@ export const projectData = [
     img: Person1,
     about: "Web business card website of small local family business.",
     tech: "CSS<br/>JavaScript<br/>Next.js<br/>Figma<br/>styled-components<br/>Framer Motion<br/>React Scroll",
-    mockups: [naprawa1, naprawa2, naprawa3, naprawa4, naprawa5, naprawa6],
+    mockups: [naprawa1, naprawa2, naprawa3, naprawa4, naprawa5],
     side: "true",
     address: "https://www.naprawapralek-lublin.pl/",
   },
