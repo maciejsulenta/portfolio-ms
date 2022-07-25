@@ -2,10 +2,10 @@ import styled from "styled-components";
 
 export const Container = styled.div`
   display: none;
-  position: fixed;
-  z-index: 999;
   @media screen and (min-width: 768px) {
     display: block;
+    position: fixed;
+    z-index: 999;
   }
 `;
 export const Circle = styled.div`
