@@ -37,8 +37,8 @@ const Project = () => {
   return (
     <Container variants={container} initial="hidden" animate="show" exit="exit">
       <RouteBubble
-        project
-        br
+        project="true"
+        br="true"
         t="0%"
         l="0%"
         w="25%"
@@ -47,8 +47,8 @@ const Project = () => {
         transition={{ duration: 0.5 }}
       />
       <RouteBubble
-        project
-        br
+        project="true"
+        br="true"
         t="100%"
         l="25%"
         w="25%"
@@ -57,8 +57,8 @@ const Project = () => {
         transition={{ duration: 0.5 }}
       />
       <RouteBubble
-        project
-        br
+        project="true"
+        br="true"
         t="0%"
         l="50%"
         w="25%"
@@ -67,8 +67,8 @@ const Project = () => {
         transition={{ duration: 0.5 }}
       />
       <RouteBubble
-        project
-        br
+        project="true"
+        br="true"
         t="100%"
         l="75%"
         w="25%"
