@@ -50,3 +50,17 @@ export const Text = styled.p`
     display: ${(props) => props.mock && "none"};
   }
 `;
+export const StyledLink = styled.a`
+  color: ${theme.colors.white};
+  padding: 0.2em 0.5em;
+  background-color: ${theme.colors.brown};
+  border-radius: 1em;
+  text-decoration: none;
+  margin-left: 0.5em;
+  cursor: none;
+  transition: all 0.3s ease;
+  &:hover {
+    background-color: ${theme.colors.white};
+    color: ${theme.colors.brown};
+  }
+`;
