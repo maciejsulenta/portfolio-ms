@@ -2,7 +2,15 @@ import React from "react";
 import { peopleData } from "../../assets/data/peopleData";
 import BurgerIcon from "../BurgerIcon";
 import MenuButton from "../MenuButton";
-import { Container, Person, TextWrap, Title, Text } from "./Header";
+import {
+  Container,
+  Person,
+  TextWrap,
+  Title,
+  Text,
+  CircleWrap,
+  Circle,
+} from "./Header";
 import { motion } from "framer-motion";
 
 const Header = () => {
@@ -15,14 +23,16 @@ const Header = () => {
       transition: {
         delay: 0.3,
         when: "beforeChildren",
-        staggerChildren: 0.5,
+        staggerChildren: 0.2,
       },
     },
   };
+
   const item = {
     hidden: { x: 100, opacity: 0 },
     show: { x: 0, opacity: 1 },
   };
+
   return (
     <Container name="home">
       <MenuButton />
@@ -41,6 +51,22 @@ const Header = () => {
         <Text variants={item} transition={{ duration: 0.5 }}>
           I'm novice developer, UX/UI designer based in Poland
         </Text>
+        <CircleWrap variants={item} transition={{ duration: 0.5 }}>
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+          <Circle />
+        </CircleWrap>
       </TextWrap>
       {peopleData.map((person) => (
         <Person

@@ -9,7 +9,7 @@ export const Container = styled.div`
   background-color: ${theme.colors.black};
   clip-path: polygon(50% 80%, 100% 40%, 100% 0, 0 0, 0 40%);
   transform: translateY(-1px);
-  z-index: 1;
+  z-index: 5;
 
   @media screen and (min-width: 450px) {
     font-size: 2.5em;

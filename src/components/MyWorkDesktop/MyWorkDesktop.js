@@ -25,6 +25,7 @@ to{
 
 export const Container = styled.div`
   display: none;
+  z-index: 4;
   @media screen and (min-width: 768px) {
     display: block;
     width: 100%;
