@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { theme } from "../../assets/styles/theme";
 import { keyframes } from "styled-components";
 import { Link } from "react-scroll";
+import { motion } from "framer-motion";
 
 const menuBubbleAnimation = keyframes`
   0% {
@@ -19,9 +20,8 @@ const menuBubbleAnimation = keyframes`
     transform: skew(-0.08turn, 5deg);
   }
 `;
-export const MenuContainer = styled.div`
+export const MenuContainer = styled(motion.div)`
   display: none;
-
   @media screen and (min-width: 768px) {
     display: block;
     height: fit-content;
@@ -30,6 +30,7 @@ export const MenuContainer = styled.div`
     top: 0;
     right: 0;
     font-size: 1em;
+    transform: translate(100%, -100%);
   }
 `;
 export const MenuBubble = styled.div`

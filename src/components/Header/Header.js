@@ -1,6 +1,7 @@
 import styled, { keyframes } from "styled-components";
 import PersonsMobile from "../../assets/images/PersonsMobile.png";
 import { theme } from "../../assets/styles/theme";
+import { motion } from "framer-motion";
 
 const personWalk = keyframes`
 0%{
@@ -269,7 +270,7 @@ export const Person = styled.div`
     transform: ${({ walkType }) => handleWalkType(walkType)};
   }
 `;
-export const TextWrap = styled.div`
+export const TextWrap = styled(motion.div)`
   width: 16em;
   height: 26em;
   position: relative;
@@ -293,12 +294,12 @@ export const TextWrap = styled.div`
     text-align: left;
   }
 `;
-export const Title = styled.h2`
+export const Title = styled(motion.h2)`
   font-size: 4em;
   font-weight: 400;
   line-height: 0.8em;
 `;
-export const Text = styled.h3`
+export const Text = styled(motion.h3)`
   font-size: 1.8em;
   font-weight: 400;
   line-height: 1em;
