@@ -25,6 +25,7 @@ export const Container = styled.div`
   top: 0;
   left: 0;
   font-size: ${theme.fontSizes.big};
+  z-index: 900;
   @media screen and (min-width: 450px) {
     font-size: ${theme.fontSizes.inter};
   }

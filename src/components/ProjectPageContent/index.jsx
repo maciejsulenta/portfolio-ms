@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { Container, Title, Text } from "./ProjectPageContent";
+import { Container, Title, Text, StyledLink } from "./ProjectPageContent";
 
 const ProjectPageContent = ({ project }) => {
   const [projectData, setProjectData] = useState(project);
@@ -14,6 +14,12 @@ const ProjectPageContent = ({ project }) => {
           tech
           dangerouslySetInnerHTML={{ __html: `${projectData.tech}` }}
         />
+        <Text>
+          Check website 
+          <StyledLink href={projectData.address} target="_blank">
+            here!
+          </StyledLink>
+        </Text>
         <Text subtitle mock>
           mockups:
         </Text>

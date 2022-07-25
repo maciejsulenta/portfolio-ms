@@ -31,6 +31,7 @@ export const projectData = [
     tech: "CSS<br/>JavaScript<br/>Next.js<br/>Figma<br/>styled-components<br/>Framer Motion<br/>React Scroll",
     mockups: [naprawa1, naprawa2, naprawa3, naprawa4, naprawa5, naprawa6],
     side: "true",
+    address: "https://www.naprawapralek-lublin.pl/",
   },
   {
     id: 2,
@@ -41,6 +42,7 @@ export const projectData = [
       "Example of web business card website for Projekt B28 Studio Tatuażu created as a One Page Website.",
     tech: "CSS<br/>JavaScript<br/>React<br/>Figma<br/>styled-components<br/>GSAP<br/>Framer Motion<br/>React Scroll<br/>Material Icons",
     mockups: [b281, b282, b283, b284, b285, b286],
+    address: "facebook.com",
   },
   {
     id: 3,
@@ -52,5 +54,6 @@ export const projectData = [
     tech: "CSS<br/>JavaScript<br/>React.js<br/>Node.js<br/>MongoDB<br/>Express<br/>Framer Motion<br/>styled-components<br/>Figma",
     mockups: [sps1, sps2, sps3, sps4, sps5, sps6],
     side: "true",
+    address: "https://sps-dent.netlify.app/",
   },
 ];
