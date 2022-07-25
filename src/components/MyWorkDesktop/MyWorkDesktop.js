@@ -64,7 +64,8 @@ export const WorkCardContainer = styled(Link)`
     background-color: ${theme.colors.brown};
   }
   &:active {
-    transform: scale(1.1);
+    transform: ${(props) =>
+      props.side ? "translateY(2em) scale(1.1)" : "translateY(7em) scale(1.1)"};
   }
 `;
 export const Image = styled.img`

@@ -3,7 +3,6 @@ import { Container, Title, Text } from "./ProjectPageContent";
 
 const ProjectPageContent = ({ project }) => {
   const [projectData, setProjectData] = useState(project);
-
   return (
     <>
       <Container key={projectData.id}>
