@@ -42,7 +42,7 @@ export const projectData = [
       "Example of web business card website for Projekt B28 Studio Tatuażu created as a One Page Website.",
     tech: "CSS<br/>JavaScript<br/>React<br/>Figma<br/>styled-components<br/>GSAP<br/>Framer Motion<br/>React Scroll<br/>Material Icons",
     mockups: [b281, b282, b283, b284, b285, b286],
-    address: "facebook.com",
+    address: "https://github.com/maciejsulenta/b28-react",
   },
   {
     id: 3,
