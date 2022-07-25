@@ -11,14 +11,14 @@ const Cursor = () => {
       length: 0,
     };
 
-    worm.length = worm.segs.length * 0.25;
+    worm.length = worm.segs.length * 0.5;
     worm.segs.forEach((s, i) => {
       worm.pos[i] = { x: 0, y: 0 };
     });
 
     document.addEventListener("mousemove", function (e) {
       let x = e.clientX - 10,
-        y = e.clientY;
+        y = e.clientY - 5;
       worm.pos[0] = { x: x, y: y };
 
       for (let i = 0; i < worm.segs.length - 1; i++) {
@@ -38,50 +38,29 @@ const Cursor = () => {
         seg.style.transform = `translate3d(${p.x}px, ${p.y}px, 0)`;
       });
     });
-
-    const navLinks = document.querySelectorAll(".link");
-    const cursorHead = document.getElementById("first");
-    const snake = [...document.querySelectorAll(".seg")];
-    navLinks.forEach((link) => {
-      link.addEventListener("mouseover", () => {
-        snake.forEach((circle) => {
-          circle.style.background =
-            "linear-gradient(to left, #e65c00, #f9d423)";
-        });
-      });
-      link.addEventListener("mouseleave", () => {
-        snake.forEach((circle) => {
-          circle.style.background =
-            "linear-gradient(to right, #ef473a, #a52a2a)";
-        });
-      });
-    });
   }, []);
 
   return (
     <Container>
-      <Circle className="seg" id="first" first></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
-      <Circle className="seg"></Circle>
+      <Circle className="seg" first />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
+      <Circle className="seg" />
     </Container>
   );
 };
