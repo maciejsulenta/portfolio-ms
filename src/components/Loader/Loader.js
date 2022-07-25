@@ -30,9 +30,6 @@ export const Container = styled.div`
 export const Logo = styled.div`
   width: 5em;
   height: 5em;
-  background-color: black;
-  border-radius: 50%;
-  border: none;
   background-image: url(${logoPic});
   background-position: center;
   background-size: cover;
