@@ -1,6 +1,11 @@
 import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyles = createGlobalStyle`
+@font-face {
+  font-family: 'Jackerton';
+  src: url("../fonts/Jackerton"} format('otf'));
+}
+
 html {
   box-sizing: border-box;
   font-size: 20px;

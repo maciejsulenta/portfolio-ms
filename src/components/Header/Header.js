@@ -274,7 +274,7 @@ export const TextWrap = styled(motion.div)`
   width: 16em;
   height: 26em;
   position: relative;
-  top: 15vh;
+  top: 10vh;
   font-family: "Gluten", sans-serif;
   color: ${theme.colors.black};
   text-align: center;
@@ -295,9 +295,14 @@ export const TextWrap = styled(motion.div)`
   }
 `;
 export const Title = styled(motion.h2)`
-  font-size: 4em;
+  font-size: 5em;
+  font-family: Jackerton;
   font-weight: 400;
-  line-height: 0.8em;
+  line-height: 0.85em;
+
+  @media screen and (min-width: 768px) {
+    font-size: 6em;
+  }
 `;
 export const Text = styled(motion.h3)`
   font-size: 1.8em;
